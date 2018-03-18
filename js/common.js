@@ -31,6 +31,7 @@ $(document).ready(function() {
 	var mainArray = [newList1, newList2, newList3];
 	var newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);
 	$('.add_new_list').click(function(e){
+		newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);
 		e.preventDefault();		
 		if ($("#name").val().length==0) {
 			alert("Write a task name!");
