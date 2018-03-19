@@ -29,11 +29,24 @@ $(document).ready(function() {
 	var newList3 = new newList(3, "CAdd task from JS", "Active", "Active");		
 
 	var mainArray = [newList1, newList2, newList3];
-	var newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);
+	var newCount = 0;
 	$('.add_new_list').click(function(e){
-		newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);
 		e.preventDefault();		
-		if ($("#name").val().length==0) {
+		
+		// if ($(".list_content").children().length > 0) {
+		// 	newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"]).innerText;
+		// 	console.log("SDFSDF")
+		// }
+
+	    if ($(".list_content").children().length == 0) {
+			newCount=1;
+			mainArray=[];
+			var afterDel = new newList(newCount, $("#name").val(), $("#select_status").val());		
+			mainArray.push(afterDel);
+			console.log("You add first task", mainArray);
+		}
+
+		else if ($("#name").val().length==0) {
 			alert("Write a task name!");
 			$("#name").addClass("warn");
 		}
@@ -47,7 +60,8 @@ $(document).ready(function() {
 			alert("You can add only 20 Tasks! Please bye a GOLD accaunt");
 		}
 
-		else{
+		else if ($(".list_content").children().length > 0){
+			newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);		
 			newCount++
 			var animal = new newList(newCount, $("#name").val(), $("#select_status").val());		
 			mainArray.push(animal);
@@ -162,11 +176,12 @@ $(document).ready(function() {
 			if (confirmResult==true) {
 				$(".list_content").children().slideUp(200, function() {
 					$(".list_content").children().remove();
+
 				});
-				console.log("DELLL")
+				console.log("DELLL");
 				removeActive();
-				$(this).addClass("active");
-				console.log("sort_21", mainArray);
+				$(this).addClass("active");				
+				
 			};
 		};
 	});
