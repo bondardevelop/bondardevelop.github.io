@@ -639,8 +639,8 @@ footer {
     -webkit-flex: initial;
         -ms-flex: initial;
             flex: initial;
-    max-width: 330px;
-    width: 330px;
+    max-width: 375px;
+    width: 375px;
     margin-left: auto; }
   .logo_wrap {
     min-width: 180px; }
