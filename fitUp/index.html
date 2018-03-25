@@ -29,8 +29,8 @@
 <body>
 	<nav class="main_nav">	
 		<ul id="menu">
-			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-			<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">home</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">About us</a></li>
 			<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
 		</ul>
 	</nav>
@@ -52,10 +52,14 @@
 	</div>
 	<div class="section" id="section1">
 		<div class="content center_wrapp">
-			<div class="row">
+			<div class="row flex_conteiner">
 				<div class="col-md-6">
 					<div class="about_us">
-						<h3>About <span class="accent">us</span></h3>
+						<div class="about_us_title">		
+							<h3>About <span class="accent">us</span></h3>
+							<span class="bottom_line animate_line"></span>
+							<span class="top_line animate_line"></span>
+						</div>
 						<div class="about_us_content">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -83,32 +87,20 @@
 								illum eius ullam iure perferendis voluptates quos debitis 
 								error quia aperiam alias, cumque omnis aut minus temporibus!
 							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Obcaecati molestiae recusandae blanditiis, repudiandae 
-								illum eius ullam iure perferendis voluptates quos debitis 
-								error quia aperiam alias, cumque omnis aut minus temporibus!
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Obcaecati molestiae recusandae blanditiis, repudiandae 
-								illum eius ullam iure perferendis voluptates quos debitis 
-								error quia aperiam alias, cumque omnis aut minus temporibus!
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Obcaecati molestiae recusandae blanditiis, repudiandae 
-								illum eius ullam iure perferendis voluptates quos debitis 
-								error quia aperiam alias, cumque omnis aut minus temporibus!
-							</p>
 						</div>
-						<div class="read_more_button"><span class="open">read more </span><span class="close_up">close</span></div>
+						<div class="read_more_button_wrapp">
+							<div class="read_more_button">
+								<span class="open">read more </span><span class="close_up">close</span>
+							</div>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="rectangle_wrapp">
-						<img src="img/giirl.jpg" alt="">
+						<div class="img_wrapp">
+							<img src="img/giirl.jpg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
