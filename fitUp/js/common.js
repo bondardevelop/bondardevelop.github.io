@@ -9,7 +9,7 @@ $(document).ready(function() {
 		menu: '#menu',
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['firstPage', 'secondPage', 'thirdPage'],
+		// navigationTooltips: ['firstPage', 'secondPage', 'thirdPage'],
 		showActiveTooltip: true,
 		slidesNavigation: true,
 		slidesNavPosition: 'bottom',
@@ -19,22 +19,21 @@ $(document).ready(function() {
 		scrollingSpeed: 700,		
 		fitToSection: true,
 		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
+		easingcss3: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
 		loopBottom: false,
 		loopTop: false,
 		loopHorizontal: true,
 		continuousVertical: false,
 		continuousHorizontal: false,
-		scrollHorizontally: false,
+		scrollHorizontally: true,
 		interlockedSlides: false,
 		dragAndMove: false,
 		offsetSections: false,
 		resetSliders: false,
 		fadingEffect: false,
 		normalScrollElements: '#element1, .element2',
-		scrollOverflow: false,
-		scrollOverflowReset: false,
+		scrollOverflow: true,
+		scrollOverflowReset: true,
 		scrollOverflowOptions: null,
 		touchSensitivity: 15,
 		normalScrollElementTouchThreshold: 5,
@@ -48,7 +47,6 @@ $(document).ready(function() {
 		//Design
 		controlArrows: true,
 		verticalCentered: true,
-		sectionsColor : ['#ccc', '#fff'],
 		paddingTop: '3em',
 		paddingBottom: '10px',
 		fixedElements: '#header, .footer',
@@ -73,6 +71,15 @@ $(document).ready(function() {
 		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
+});
+
+
+$('.read_more_button').click(function(e){
+  e.preventDefault();
+  $('.read_more_toggl').slideToggle();
+  $('.close_up').toggle();
+  $('.open').toggle();
+ 
 });
 
 });
