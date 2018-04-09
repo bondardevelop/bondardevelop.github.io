@@ -1,3 +1,24 @@
+$(window).on('load', function() {
+	
+	$('#preloader').fadeOut();
+	setTimeout(function(){				
+
+		$('#hola').fadeOut();
+		$('.center_circle .circle_animate').addClass('circle-chart__circle');
+		$('.header_man').addClass('header_man_animate');
+		$('.social_icons_inner').addClass('social_icons_inner_animate');
+		$("#menu li").each(function(index) {        
+			(function(that, i) { 
+				var t = setTimeout(function() { 
+					$(that).addClass('li_active');
+				}, 400 * i);
+			})(this, index);
+		});
+
+	}, 100);
+});
+
+
 $(function() {
 
 $(document).ready(function() {
@@ -63,8 +84,8 @@ $(document).ready(function() {
 		lazyLoading: true,
 
 		afterLoad: function(anchorLink, index){
+
 			if (index == 2) {
-				console.log("2222")
 				$('.about_us .about_us_title').addClass('title_animation');
 				$('.read_more_button_wrapp').addClass('read_more_animation');
 				$('.about_us_content p').first().addClass('about_us_content_animation');
@@ -77,6 +98,20 @@ $(document).ready(function() {
 				setTimeout(function(){
 					$('.about_us_content p').addClass('about_us_content_animation');
 				}, 300);
+			}
+
+			if (index == 3) {
+				$('.read_more_button_wrapp').addClass('read_more_animation');
+				$('.get_price h3').addClass('title_animation');
+				$('.circle_animate').addClass('circle-chart__circle');
+				$('.slide .slide_left img').addClass('scaling_img');
+				// $('.slide .slide_left img').css({'transform':'scale(1)'});	
+				setTimeout(function(){
+					$('.get_price_content').fadeIn('slow');
+				}, 400);
+				setTimeout(function(){					
+					$('.slide .slide_left img').css({'animation':'scaling 6s ease-in-out infinite'});
+				}, 800);
 			}
 		},
 
@@ -92,7 +127,7 @@ $(document).ready(function() {
 });
 
 
-$('.read_more_button').click(function(e){
+$('.read_more_button_main').click(function(e){
   e.preventDefault();
   $('.read_more_toggl').slideToggle();
   $('.close_up').toggle();
@@ -160,14 +195,12 @@ setInterval(function(){
 	var toplLine = $('.top_line');
 	var randomNum = Math.floor((Math.random() * 130) + 1);
 	toplLine.css('transform','translatex('+randomNum+'px)'); 
-
 }, 2400);
 
 setInterval(function(){ 
-	var toplLine = $('.bottom_line');
-	var randomNum = Math.floor((Math.random() * 50) + 1);
-	toplLine.css('transform','translatex('+randomNum+'px)'); 
-
-}, 1800);
+	var bottomLine = $('.bottom_line');
+	var randomNum = Math.floor((Math.random() * 150) + 40) + 'px';
+	bottomLine.css({'transform':'translatex('+randomNum+')', 'width':randomNum}); 
+}, 1500);
 
 });
