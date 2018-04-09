@@ -29,24 +29,14 @@ $(document).ready(function() {
 	var newList3 = new newList(3, "CAdd task from JS", "Active", "Active");		
 
 	var mainArray = [newList1, newList2, newList3];
-	var newCount = 0;
+	// var newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);
+	var newCount = 3;
+
 	$('.add_new_list').click(function(e){
-		e.preventDefault();		
+		// newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);
 		
-		// if ($(".list_content").children().length > 0) {
-		// 	newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"]).innerText;
-		// 	console.log("SDFSDF")
-		// }
-
-	    if ($(".list_content").children().length == 0) {
-			newCount=1;
-			mainArray=[];
-			var afterDel = new newList(newCount, $("#name").val(), $("#select_status").val());		
-			mainArray.push(afterDel);
-			console.log("You add first task", mainArray);
-		}
-
-		else if ($("#name").val().length==0) {
+		e.preventDefault();		
+		if ($("#name").val().length==0) {
 			alert("Write a task name!");
 			$("#name").addClass("warn");
 		}
@@ -60,8 +50,7 @@ $(document).ready(function() {
 			alert("You can add only 20 Tasks! Please bye a GOLD accaunt");
 		}
 
-		else if ($(".list_content").children().length > 0){
-			newCount = parseInt($(".list_content").children().last().find($(".counter"))["0"].innerText);		
+		else{
 			newCount++
 			var animal = new newList(newCount, $("#name").val(), $("#select_status").val());		
 			mainArray.push(animal);
@@ -174,14 +163,14 @@ $(document).ready(function() {
 		if($(this).hasClass('active')==false) {
 			var confirmResult = confirm("Are You shure???");
 			if (confirmResult==true) {
+				newCount=0;
 				$(".list_content").children().slideUp(200, function() {
 					$(".list_content").children().remove();
-
 				});
-				console.log("DELLL");
+				mainArray=[];				
 				removeActive();
-				$(this).addClass("active");				
-				
+				$(this).addClass("active");
+				console.log( "you delete all lists", mainArray);
 			};
 		};
 	});
@@ -189,15 +178,13 @@ $(document).ready(function() {
 	//delete_one//
 	$('.list_content').on("click", '.delete span', function(e){
 		e.preventDefault();
+		newCount--;
 		var parrentItem = $(this).parent().parent();
-		var removeFromArr = parrentItem.find(".counter")["0"].innerHTML;		
-		$(".list_content").children().remove();
+		var removeFromArr = parrentItem.find(".counter")["0"].innerHTML;	
 		for (var i = 0; i < mainArray.length; i++) {
-			if (mainArray[i].counter==removeFromArr) {				
-				mainArray.splice((mainArray[i].counter - 1), 1);
-			};
-			mainArray[i].counter = i+1;
-			addListAfterSort(mainArray[i]);
+			if (mainArray[i].counter==removeFromArr) {	
+				mainArray.splice(i, 1);				
+			}			
 		}
 		console.log("You delete one task", mainArray);		
 		parrentItem.slideToggle(200, "swing", function() {
