@@ -1,0 +1,1252 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px	
+	letter-spacing: 2px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	font-weight: normal
+	overflow-x: hidden
+	color: #fff
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	&::-webkit-scrollbar
+		width: 0px
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family: 'HarvestItal', sans-serif
+	font-size: 43px
+
+#hola
+	background-color: $background
+	width: 100%
+	height: 100vh
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 9999999999999
+
+#preloader
+	width: 40px
+	height: 40px
+	margin-top: calc(50vh	- 20px)
+	margin-left: calc(50%	- 20px)
+
+.bottom_line
+	display: block
+	width: 130px
+	height: 2px
+	background-color: $accent
+	position: absolute
+	left: 50px
+	bottom: 0
+	transition: ease-in-out all 2.5s
+.top_line
+	display: block
+	height: 2px
+	width: 50px			
+	background-color: $accent
+	position: absolute
+	left: 0
+	transition: ease-in-out all 4s 
+	top: 0
+
+.accent
+	color: $accent
+
+.flex_conteiner
+	display: flex
+	align-items: center
+	justify-content: center
+
+p
+	font-size: 13px
+	letter-spacing: .5px
+
+a
+	color: #fff
+	text-decoration: none
+	transition: all .3s
+	&:hover
+		color: $accent
+		text-decoration: none
+		cursor: pointer
+	&:active
+		color: #fff
+		text-decoration: none
+	&:focus
+		color: #fff
+		text-decoration: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+#section0,
+#section1,
+#section2,
+#section3,
+#section4,
+#section5
+	transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035)
+	position: relative
+	background-color: $background
+
+#toggle
+	width: 28px
+	height: 30px
+	position: absolute
+	right: 45px
+	top: 40px
+	z-index: 10
+	display: block
+	div
+		width: 100%
+		height: 5px
+		background: #fff
+		margin: 4px auto
+		transition: all 0.3s
+	&:hover
+		cursor: pointer
+	&:hover
+		div
+			background-color: $accent
+
+.on
+	.one
+		transform: rotate(45deg) translate(5px, 5px)
+
+.on
+	.two
+		opacity: 0
+
+.on
+	.three
+		transform: rotate(-45deg) translate(7px, -8px)
+
+#section0
+	text-align: center
+
+#section1
+	position: relative
+	&:after
+		width: 100%
+		height: 2px
+		background-color: $background
+		position: absolute
+		bottom: -1px
+		left: 0
+		content: ''
+
+@keyframes move
+	transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035)
+
+.center_wrapp
+	// width: calc(100% - 110px)
+	// padding-left: 6%
+	width: 1170px
+	margin-left: auto
+	margin-right: auto
+
+#fp-nav
+	margin-right: 40px
+	ul
+		li
+			&:first-child
+				a
+					text-transform: uppercase
+					&:after
+						font-size: 13px
+						content: '01'
+						display: block
+						margin-left: 10px
+						transition: all .3s					
+			&:nth-child(2)
+				a
+					&:after
+						font-size: 13px
+						content: '02'
+						display: block
+						margin-left: 10px
+						transition: all .3s					
+			&:nth-child(3)
+				a
+					&:after
+						font-size: 13px
+						content: '03'
+						display: block
+						margin-left: 10px
+						transition: all .3s					
+			&:nth-child(4)
+				a
+					&:after
+						font-size: 13px
+						content: '04'
+						display: block
+						margin-left: 10px
+						transition: all .3s	
+			&:nth-child(5)
+				a
+					&:after
+						font-size: 13px
+						content: '05'
+						display: block
+						margin-left: 10px
+						transition: all .3s									
+			&:nth-child(6)
+				a
+					&:after
+						font-size: 13px
+						content: '06'
+						display: block
+						margin-left: 10px
+						transition: all .3s									
+			.active				
+				&:after
+					transform: scale(2)
+					margin-left: 7px!important
+					color: $accent
+			a
+				margin: 30px 0				
+				span
+					display: none
+			.fp-tooltip
+				top: 2px
+
+
+.main_nav
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	z-index: 1
+	margin-top: 50px
+	color: #fff
+	width: 100%
+	margin: 0
+	padding: 0
+	height: 100vh
+	background-color: rgba(0, 0, 0, .9)
+	transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+	ul
+		margin: 0
+		padding: 0
+		height: 100%
+		display: flex
+		justify-content: center
+		flex-direction: column
+		li
+			list-style-type: none
+			display: inline-block
+			position: relative
+			display: block
+			text-align: center
+			margin: 10px 0
+			&:after
+				position: absolute
+				height: 30px
+				width: 100%
+				top: 0
+				left: -30px
+				content: ''
+				background-color: $background
+				transition: all .4s
+			a								
+				// margin-right: 50px
+				margin: 0
+				position: relative
+				text-transform: uppercase
+
+				&:before	
+					display: none				
+					height: 1px
+					content: ''
+					background-color: #fff
+					width: 20px
+					position: absolute
+					top: 8px
+					left: -30px
+					transition: all .3s
+				&:hover:before
+					left: 0px
+					width: 0
+					color: $accent
+		.li_active
+			&:after
+				left: 0
+				width: 0
+				content: ''
+		.active			
+			a
+				color: $accent
+				&:before
+					background-color: $accent
+					// width: 0
+					// left: 0px
+
+.scroll_div
+	position: absolute
+	bottom: 40px
+	right: 100px
+	z-index: 20
+
+#scroll_down	
+	position: relative
+	width: 30px
+	height: 40px
+	display: block
+	span
+		position: absolute
+		top: 0
+		left: 50%
+		width: 25px
+		height: 40px
+		margin-left: -15px
+		border: 1px solid #fff
+		border-radius: 50px
+		box-sizing: border-box
+		transition: all .3s
+		&:hover
+			border: 1px solid $accent
+		&:hover:before
+			background-color: $accent
+		&:before
+			position: absolute
+			top: 5px
+			left: 50%
+			width: 2px;
+			height: 8px;
+			margin-left: -1px
+			background-color: #fff
+			border-radius: 100%;
+			-webkit-animation: sdb10 2s infinite
+			animation: sdb10 2s infinite
+			box-sizing: border-box
+			content: ''
+
+@keyframes sdb10 
+	0% 
+		transform: translate(0, 0)
+		opacity: 0  
+	40% 
+		opacity: 1  
+	80% 
+		transform: translate(0, 20px)
+		opacity: 0  
+	100% 
+		opacity: 0
+
+
+.social_icons
+	position: absolute
+	left: 70px
+	bottom: 40px
+	span,
+	a
+		text-transform: uppercase
+		display: block
+		float: left
+		&:first-child
+			margin-right: 50px
+			position: relative
+			&:after					
+				height: 1px					
+				background-color: #fff
+				width: 20px
+				position: absolute
+				top: 11px
+				right: -30px
+				transition: all .3s
+				content: ''		
+			&:hover
+				color: #fff
+				cursor: default
+
+.social_icons_inner
+	position: relative
+	&:after
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $background
+		transition: all 1s
+		content: ''
+.social_icons_inner_animate
+	&:after
+		width: 0
+
+.center_circle
+	display: inline-block
+	position: relative
+	height: 430px
+	width: 430px
+	margin-right: -100px
+	.main_text	
+		position: absolute
+		top: 55px
+		left: -190px
+		.main_text_inner
+			position: relative
+			span
+				font-size: 140px
+				display: block
+				letter-spacing: -1.49px
+				line-height: 107px
+				font-family: 'HarvestItal', sans-serif
+				text-transform: uppercase
+			.second
+				margin-left: -30px
+				letter-spacing: 6px
+			.third
+				margin-left: -75px
+				letter-spacing: 6px
+			&:after
+				position: absolute
+				top: 0
+				left: -35px
+				width: calc(100% + 60px)
+				height: 100%
+				background-color: $background
+				content: ''
+				transition: all 1.3s
+				transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+		.main_text_inner_animete
+			&:after
+				width: 0				
+	.circle-chart
+		height: 100%
+		width: 100%		
+	.header_man
+		position: absolute
+		top: -15px
+		right: -60px
+		display: block
+		width: 370px
+		height: auto
+		z-index: 10
+		transform: scale(0)
+		// opacity: 0
+		transition: all 1s
+		transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+	.header_man_animate
+		opacity: 1
+		transform: scale(1)
+	.circle_animate
+			stroke: transparent
+			stroke-dasharray: 75
+	.circle-chart__circle
+		animation: circle-chart-fill 1s reverse		
+		transform: rotate(-135deg)
+		transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+		transform-origin: center
+		stroke: #fff
+
+
+.logo
+	position: absolute
+	top: 40px
+	left: 70px
+
+.facebook
+	margin-top: 2px
+	margin-right: 15px
+	svg
+		width: 20px
+		height: 20px
+		transition: all .3s
+		fill: #fff
+	&:hover svg		
+		fill: #4267b2
+
+
+.instagram
+	margin-top: 2px
+	svg
+		width: 20px
+		height: 20px
+		transition: all .3s
+		fill: #fff
+	&:hover svg		
+		// fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+		fill: url(#instagram_gradient)
+#instagram_gradient
+	opacity: 0.0
+  display: inline-block
+	transition: opacity .3s
+	&:hover
+		opacity: 1.0
+//section 2//
+
+
+.read_more_toggl
+	display: none
+
+
+
+.about_us
+	.about_us_title
+		display: table
+		position: relative
+		margin: 0 0 30px 0
+		h3			
+			position: relative
+			padding: 15px 50px 15px 0
+			margin: 0	
+			min-width: 0%
+		&:after
+			position: absolute
+			height: 100%
+			left: 0
+			top: 0
+			width: 100%			
+			background-color: $background			
+			transition: all .5s
+			content: ''
+	.title_animation
+		&:after
+			left: 100%
+			width: 0
+			transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+			transition-duration: .6s
+			
+	.about_us_content
+		padding-right: 50px
+
+.read_more_button
+	text-transform: uppercase
+	box-sizing: border-box
+	border: 3px solid #fff
+	padding: 15px 80px		
+	position: relative
+	margin-bottom: 15px
+	margin-top: 15px
+	span
+		transition: all .3s
+	&:before
+		position: absolute			
+		height: 2px
+		width: 50px
+		left: 3px
+		top: -15px
+		background-color: $accent
+		transition: all .3s
+		content: ''
+	&:after
+		position: absolute
+		height: 2px
+		right: 3px
+		width: 80px
+		bottom: -15px
+		background-color: $accent
+		transition: all .3s
+		content: ''
+	&:hover
+		cursor: pointer
+	&:hover
+		span
+			color: $accent
+	&:hover:after
+		width: 100%
+		right: 0
+	&:hover:before
+		width: 100%
+		left: 0
+.read_more_button_wrapp
+	display: table
+	float: right
+	position: relative
+	margin-top: 35px
+	&:after
+		position: absolute
+		height: 100%
+		left: 0
+		top: 0
+		width: 100%			
+		background-color: $background			
+		transition: all .5s
+		content: ''
+.read_more_animation
+	&:after
+		left: 100%
+		width: 0
+		transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+		transition-duration: .6s
+		transition-delay: .3s	
+
+
+.close_up
+	display: none
+.about_us_content
+	p
+		margin-top: 0px
+		opacity: 0
+.about_us_content		
+	.about_us_content_animation
+		transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+		transition-duration: .6s
+		margin-top: 0px
+		opacity: 1
+
+
+.rectangle_wrapp
+	width: 60%
+	margin: 0 auto
+	position: relative
+	opacity: 0
+	border: 30px solid #fff
+	box-shadow: 0 2px 24px 0 rgba(0,0,0,0.5)
+	transition: all .5s
+	&:before
+		display: block
+		padding-top: 100%
+		content: ""
+	.img_wrapp
+		background-color: $accent
+		position: absolute
+		top: 40px
+		left: 30px
+		opacity: 0
+		margin-top: 50px
+		width: calc(100% + 70px)
+		background-color: $accentrgba
+		animation: levitation 6s ease-in-out infinite
+		box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5)
+		transition: all .5s
+	img				
+		width: 100%		
+		height: auto
+		opacity: 0
+		margin-top: 30%
+		transition: all 1s
+
+
+@keyframes levitation
+	0%
+		box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5)
+		transform: translatey(0px)	
+	50% 
+		box-shadow: 2px 10px 15px 0px rgba(0,0,0,0.2)
+		transform: translatey(-15px)	
+	100% 
+		box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5)
+		transform: translatey(0px)
+
+@keyframes linea
+	0%
+		box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5)
+		transform: translatex(0px)	
+	50% 
+		box-shadow: 2px 10px 15px 0px rgba(0,0,0,0.2)
+		transform: translatex(-45px)	
+	100% 
+		box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5)
+		transform: translatex(0px)
+	
+
+//section 3
+#section2
+	.fp-slidesNav
+		text-align: center
+		bottom: 10vh
+
+#section2
+	padding: 0 !important
+	.absolute_left
+		padding-left: 6%
+		width: 40%
+		height: 100vh
+		position: absolute
+		left: 0
+	.absolute_right
+		width: 60%
+		right: 0
+		height: 100vh
+		position: absolute
+		padding-right: 110px
+		padding-left: 3%
+		justify-content: left
+		.read_more_button_wrapp
+			position: absolute
+			bottom: 15vh
+			z-index: 20
+			right: calc(15% + 110px)
+			.read_more_button
+				padding: 0
+			a
+				padding: 15px 80px
+				display: block
+				transition: all .3s
+			&:hover
+				a
+					color: $accent
+		.get_price
+			margin-top: -250px			
+			h3
+				position: relative
+				padding: 15px 50px 15px 0
+				&:after
+					position: absolute
+					height: 100%
+					left: 0
+					top: 0
+					width: 100%			
+					background-color: $background			
+					transition: all .5s
+					transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+					content: ''
+			.title_animation
+				&:after
+					left: 100%
+					width: 0
+					transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+					transition-duration: .6s
+	.slide
+		padding-left: 100px
+		padding-right: 110px
+	.sircle
+		width: 360px		
+		height: 360px
+		border-radius: 50%
+		transform: rotate(-45deg)
+		svg
+			width: 100%
+			height: 100%
+		.circle_animate
+			stroke: transparent
+		.circle-chart__circle
+			animation: circle-chart-fill 1s reverse
+			transform: rotate(-90deg)
+			transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+			transform-origin: center
+			stroke: #fff
+
+@keyframes circle-chart-fill 
+	to 
+  	stroke-dasharray: 0 100
+
+#section2
+	.fp-slidesNav
+		li
+			.active
+				span
+					background-color: $accent
+	.fp-controlArrow
+
+
+	.fp-prev		
+		border: none
+		width: 20px
+		height: 2px
+		background-color: #fff
+		transition: all .3s 
+		top: initial
+		left: calc(50% - 70px)
+		z-index: 15
+		margin-top: 0
+		bottom: 10vh
+		margin-bottom: 20px
+		&:after
+			height: 12px
+			width: 12px
+			border-left: 2px solid #fff
+			border-top: 2px solid #fff
+			position: absolute
+			left: 0
+			top: -5px
+			transform: rotate(-45deg)
+			transition: all .3s 
+			content: ''
+		&:hover
+			background-color: $accent
+		&:hover:after
+			border-left: 2px solid $accent
+			border-top: 2px solid $accent
+	.fp-next	
+		border: none
+		width: 20px
+		height: 2px
+		background-color: #fff
+		transition: all .3s 
+		top: initial
+		right: calc(50% - 70px)
+		z-index: 15
+		margin-top: 0
+		margin-bottom: 20px
+		bottom: 10vh
+		&:after
+			height: 12px
+			width: 12px
+			border-left: 2px solid #fff
+			border-top: 2px solid #fff
+			position: absolute
+			right: 0
+			top: -5px
+			transform: rotate(135deg)
+			transition: all .3s 
+			content: ''
+		&:hover
+			background-color: $accent
+		&:hover:after
+			border-left: 2px solid $accent
+			border-top: 2px solid $accent
+	.slide
+		.slide_left
+			width: 40%
+			float: left
+			height: 100vh
+			padding: 13vh 0
+			img
+				margin: 0 auto
+				
+				display: block
+				transition: all .8s
+				transform: scale(0)
+				opacity: 0			
+		.slide_right
+			width: 60%
+			float: left
+			height: 100vh
+			padding-left: 3%
+			padding-right: 10%
+			.get_price_content			
+				display: none	
+				h4
+					font-size: 30px
+					margin-top: 150px
+					margin-left: -10px
+
+
+.scaling_img
+	transform: scale(1)!important
+	opacity: 1!important
+	transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)!important
+
+@keyframes scaling
+	0%		
+		transform: scale(1)	
+	50% 		
+		transform: scale(1.05)
+	100% 		
+		transform: scale(1)
+
+//section 4
+#section3
+	.our_team
+		.our_team_title
+			display: table
+			position: relative
+			margin: 0 0 30px 0
+			h3			
+				position: relative
+				padding: 15px 50px 15px 0
+				margin: 0	
+				min-width: 0%
+			// &:after
+			// 	position: absolute
+			// 	height: 100%
+			// 	left: 0
+			// 	top: 0
+			// 	width: 100%			
+			// 	background-color: $background			
+			// 	transition: all .5s
+			// 	content: ''
+	
+.our_team_content
+	// width: 1130px
+	// margin-left: auto
+	// margin-right: auto
+	.slick-prev
+		position: absolute
+		bottom: 0
+		left: calc(50% - 50px)
+		font-size: 0
+		border: none
+		width: 20px
+		height: 2px
+		background-color: #fff
+		transition: all .3s		
+		z-index: 15
+		margin-top: 0		
+		margin-bottom: 20px
+		&:focus
+			outline: none
+		&:after
+			height: 12px
+			width: 12px
+			border-left: 2px solid #fff
+			border-top: 2px solid #fff
+			position: absolute
+			left: 0
+			top: -5px
+			transform: rotate(-45deg)
+			transition: all .3s 
+			content: ''
+		&:hover
+			background-color: $accent
+		&:hover:after
+			border-left: 2px solid $accent
+			border-top: 2px solid $accent
+	.slick-next
+		position: absolute
+		bottom: 0
+		right: calc(50% - 50px)
+		font-size: 0
+		border: none
+		width: 20px
+		height: 2px
+		background-color: #fff
+		transition: all .3s 
+		top: initial		
+		z-index: 15
+		margin-top: 0
+		margin-bottom: 20px	
+		&:focus
+			outline: none	
+		&:after
+			height: 12px
+			width: 12px
+			border-left: 2px solid #fff
+			border-top: 2px solid #fff
+			position: absolute
+			right: 0
+			top: -5px
+			transform: rotate(135deg)
+			transition: all .3s 
+			content: ''
+		&:hover
+			background-color: $accent
+		&:hover:after
+			border-left: 2px solid $accent
+			border-top: 2px solid $accent
+	.slick-slide
+		&:focus
+			outline: none
+	.slick-track
+		padding-top: 50px
+	.slick-current		
+		margin-left: 20px
+		margin-right: 20px	
+		margin-top: -50px
+		.our_team_item_inner
+			margin-top: 35px
+			width: 640px
+			height: 340px
+			.our_team_item_img
+				height: 100%
+				width: 380px
+				position: relative
+				img
+					display: block
+					height: 100%	
+			.our_team_item_description
+				display: block
+				opacity: 1
+				width: 250px
+				height: 390px
+				position: absolute
+				right: 0
+				top: -18px		
+				padding: 30px 30px 20px 30px
+				background-color: $background
+				box-shadow: -9px 6px 14px 4px #000
+				transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+				transition-duration: .6s
+				.our_team_item_description_title
+					position: relative
+					font-size: 46px
+					line-height: 38px
+					margin-bottom: 40px
+					font-family: 'HarvestItal', sans-serif
+					&:after
+						position: absolute
+						bottom: -15px
+						left: 0
+						background-color: $accent
+						height: 2px
+						width: 85px
+						content: ''
+				.our_team_item_description_content
+					font-size: 12px
+					line-height: 14px
+				.our_team_item_description_icons
+					margin-top: 30px
+					display: flex
+					justify-content: center
+					a
+						margin: 0 4px
+					.facebook
+						margin-right: 5px
+
+	.our_team_item
+		height: 440px		
+	.our_team_item_inner
+		background-color: $background
+		position: relative
+		height: 290px
+		width: 310px
+		box-shadow: -6px 18px 16px 0 #000000
+		.our_team_item_img
+			height: 100%
+			width: 380px
+			float: left
+			transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+			transition-duration: .6s
+			img
+				display: block
+				height: 100%	
+		.our_team_item_description			
+			display: none
+			opacity: 0
+			transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+			transition-duration: .6s
+
+
+//section 4
+#section4
+	.mobile_upp
+		width: 1040px
+		margin-left: auto
+		margin-right: auto
+		.mobile_upp_title
+			display: table
+			position: relative
+			margin: 0 0 30px 0
+			h3			
+				position: relative
+				padding: 15px 50px 15px 0
+				margin: 0	
+				min-width: 0%
+				&:after
+					position: absolute
+					height: 100%
+					left: 0
+					top: 0
+					width: 100%			
+					background-color: $background			
+					transition: all .5s
+					content: ''
+			.title_animation
+				&:after
+					left: 100%
+					width: 0
+					transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+					transition-duration: .6s
+		.mobile_upp_content
+			width: 800px
+			position: relative
+			.mobile_upp_content_inside				
+				border: 25px solid #fff
+				padding: 60px 160px 120px 60px
+				.mobile_upp_content_inside_text
+					opacity: 0
+					transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+					transition-duration: .6s
+				.read_more_button_wrapp
+					margin-right: 70px
+					margin-top: 20px
+					.read_more_button
+						padding: 6px 35px
+					a
+						font-size: 12px;
+				p
+					font-size: 12px
+					line-height: 16px
+					letter-spacing: -0.08px
+				.iphone_x
+					position: absolute
+					right: -300px
+					top: -100px
+					img
+						display: block
+						opacity: 0
+						margin-top: 100px
+						animation: levitation_no 6s ease-in-out infinite
+						transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)	
+						transition-duration: 1s
+						transition: all .8s
+
+
+@keyframes levitation_no
+	0%		
+		transform: translatey(0px)	
+	50% 		
+		transform: translatey(-15px)	
+	100% 		
+		transform: translatey(0px)				
+
+
+//section 5
+#section5	
+	position: relative
+	.map
+		width: 100%
+		#kiev
+			right: 500px
+			top: 90px
+		#moskov
+			right: 420px
+			top: 70px
+		.marker_content
+			display: none
+		.marker
+			position: absolute
+			right: 0
+			top: 0
+			z-index: 10
+			width: 40px
+			height: 42px
+			background-image: url(../img/marker_sprite.png)
+			background-size: 75% 200%
+			background-repeat: no-repeat
+			background-position: 0 2px
+			// transition: all .4s
+			&:hover
+				cursor: pointer
+				background-position: 0 -42px
+			&:hover .marker_content
+				display: block
+			.marker_content_wrap
+				position: relative
+				.marker_content					
+					top: 40px
+					left: 35px
+					padding: 13px
+					position: absolute
+					transition: all .4s					
+					width: 200px
+					background-color: $background
+					box-shadow: 0 4px 15px 5px rgba(0,0,0,0.8)
+					p.title
+						font-size: 12px
+						font-weight: normal
+						margin-bottom: 5px
+					p
+						font-weight: bold
+						margin: 0
+
+		img
+			margin-bottom: -180px
+			display: block
+			width: 100%
+			height: auto
+	.center_wrapp
+		position: relative
+		display: flex		
+	.my_footer
+		position: absolute
+		left: 0
+		bottom: 0
+		height: 100px
+		width: 100%
+		box-shadow: 0 5px 25px 7px rgba(0,0,0,0.53)
+		background-color: $background
+		.social_icons			
+			bottom: 110px
+			left: 100px
+		.center_wrapp
+			height: 100%
+			align-items: center
+			justify-content: space-between
+			padding-left: 120px
+			padding-right: 120px
+			overflow: hidden
+		.my_footer_icon
+			margin-top: -20px
+			width: 120px
+			height: 100%
+			.my_footer_icon_inner
+				height: 120px
+				width: 100%
+				border-radius: 50%
+				object-fit: cover
+				border: 2px solid $accent
+				.img_cover	
+					width: 100%
+					height: 100%
+					display: flex
+					align-items: center
+					justify-content: center
+					img
+						border: 2px solid $accent
+						border-radius: 50%	
+						padding: 10px
+						width: 53px
+						height: 53px
+		.my_footer_text
+			p
+				font-size: 12px
+				margin: 0
+			.my_footer_text_title
+				font-size: 31px
+				line-height: 31px
+				font-family: 'HarvestItal', sans-serif
+		.my_footer_select
+			width: 290px
+			height: 44px
+			display: flex	
+			&:focus
+				outline: 2px solid $accent		
+			input
+				border: none
+				width: calc(100% - 40px)
+				border-top-left-radius: 5px
+				border-bottom-left-radius: 5px
+				padding-left: 13px
+				color: #000
+			.select_country
+				position: relative
+				width: 40px
+				background-color: #fff
+				position: relative
+				border-top-right-radius: 5px
+				border-bottom-right-radius: 5px
+				position: relative
+				border-left: 2px solid $background
+				&:hover
+					cursor: pointer
+					background-color: $accent
+				.select_arrow
+					position: absolute
+					height: 14px
+					width: 14px
+					left: 12px
+					top: 13px
+					border-right: 2px solid $background
+					border-bottom: 2px solid $background
+					transform: rotate(45deg)
+				ul
+					display: none
+
+
+
+@import "media" // Always at the end

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>FitUp</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<div id="hola">
+		<div id="preloader">
+			<svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+			<path fill="#fff" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+			c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+			<animateTransform 
+			attributeName="transform" 
+			attributeType="XML" 
+			type="rotate"
+			dur="2s" 
+			from="0 50 50"
+			to="360 50 50" 
+			repeatCount="indefinite" />
+		</path>
+		<path fill="#fff" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+		c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+		<animateTransform 
+		attributeName="transform" 
+		attributeType="XML" 
+		type="rotate"
+		dur="1s" 
+		from="0 50 50"
+		to="-360 50 50" 
+		repeatCount="indefinite" />
+	</path>
+	<path fill="#fff" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+	L82,35.7z">
+	<animateTransform 
+	attributeName="transform" 
+	attributeType="XML" 
+	type="rotate"
+	dur="2s" 
+	from="0 50 50"
+	to="360 50 50" 
+	repeatCount="indefinite" />
+</path>
+</svg>
+</div>
+</div>
+
+<div id="toggle">
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+</div>
+
+
+	<nav class="main_nav">	
+		<ul id="menu">
+			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">home</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">About us</a></li>
+			<li data-menuanchor="thirdPage"><a href="#thirdPage">Get a price</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">Our team</a></li>
+			<li data-menuanchor="fifthPage"><a href="#fifthPage">Mobile upp</a></li>
+			<li data-menuanchor="sixPage"><a href="#sixPage">Contacts</a></li>
+		</ul>
+	</nav>
+
+
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="content">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<div class="scroll_div">
+				<a id="scroll_down" href="#secondPage"><span></span></a>
+			</div>
+			<div class="social_icons">
+				<div class="social_icons_inner">
+					<span id="follow_us">follow us</span>
+					<a class="facebook" href="#" title="facebook">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+							<g>
+								<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z " />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="instagram" title="instagram">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+							<g>
+								<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+								<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+								<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+								<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+							</g>
+							<linearGradient id="instagram_gradient"
+							x1="0" y1="100%" x2="100%" y2="0">
+							<stop offset="0%" stop-color="#fdf497" 
+							class="stop-1"/>
+							<stop offset="5%" stop-color="#fdf497" 
+							class="stop-1"/> 
+							<stop offset="45%" stop-color="#fd5949" 
+							class="stop-1"/>  
+							<stop offset="60%" stop-color="#d6249f"
+							class="stop-2"/>
+							<stop offset="100%" stop-color="#285AEB" 
+							class="stop-3"/>
+							</linearGradient>
+						</svg>
+					</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+			<div class="center_circle">
+				<div class="main_text">
+					<div class="main_text_inner">
+						<span class="first">make</span>
+						<span class="second">your</span>
+						<span class="third">body</span>
+					</div>			
+				</div>
+				<img class="header_man" src="img/men.png" alt="men">
+				<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+					<circle class="circle_animate" stroke-width="1.72" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="content center_wrapp">
+			<div class="row flex_conteiner">
+				<div class="col-sm-6">
+					<div class="about_us">
+						<div class="about_us_title">		
+							<h3>About <span class="accent">us</span></h3>
+							<span class="bottom_line animate_line"></span>
+							<span class="top_line animate_line"></span>
+						</div>
+						<div class="about_us_content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Obcaecati molestiae recusandae blanditiis, repudiandae 
+								illum eius ullam iure perferendis voluptates quos debitis 
+								error quia aperiam alias, cumque omnis aut minus temporibus!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Obcaecati molestiae recusandae blanditiis, repudiandae 
+								illum eius ullam iure perferendis voluptates quos debitis 
+								error quia aperiam alias, cumque omnis aut minus temporibus!
+							</p>
+						</div>
+						<div class="read_more_toggl">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Obcaecati molestiae recusandae blanditiis, repudiandae 
+								illum eius ullam iure perferendis voluptates quos debitis 
+								error quia aperiam alias, cumque omnis aut minus temporibus!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Obcaecati molestiae recusandae blanditiis, repudiandae 
+								illum eius ullam iure perferendis voluptates quos debitis 
+								error quia aperiam alias, cumque omnis aut minus temporibus!
+							</p>
+						</div>
+						<div class="read_more_button_wrapp">
+							<div class="read_more_button read_more_button_main">
+								<span class="open">read more </span><span class="close_up">close</span>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-6">
+					<div class="rectangle_wrapp">
+						<div class="img_wrapp">
+							<img src="img/giirl.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="absolute_left flex_conteiner">
+			<div class="sircle">
+				<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+					<circle class="circle-chart__background" stroke="transparent" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+					<circle class="circle_animate" stroke="#fff" stroke-width="2" stroke-dasharray="100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+				</svg>
+			</div>
+		</div>
+		<div class="absolute_right flex_conteiner">
+			<div class="get_price">
+				<h3>
+					<span>To get a</span> 
+					<span class="accent">price list</span> 
+					<span class="bottom_line animate_line"></span>
+					<span class="top_line animate_line"></span>
+				</h3>
+			</div>
+			<div class="read_more_button_wrapp">
+				<div class="read_more_button">
+					<a href="price_list.pdf" target="blank">GET</a>
+				</div>
+			</div>
+		</div>		
+		
+		<div class="slide">
+			<div class="slide_left flex_conteiner">
+				<img src="img/niga.png" alt="men">
+			</div>
+			<div class="slide_right flex_conteiner">
+				<div class="get_price_content">
+					<h4>
+						Personal training
+					</h4>
+					<p>
+						It is a long established fact that a reader will be distracted by 
+						the readable content of a page when looking at its It is a long e
+						stablished fact eadable content of a page when looking at its It is a 
+						long establish of a page when looking at its It is a long establish 
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="slide">
+			<div class="slide_left flex_conteiner">
+				<img src="img/group-class.png" alt="group">
+			</div>
+			<div class="slide_right flex_conteiner">
+				<div class="get_price_content">
+					<h4>
+						Group training
+					</h4>
+					<p>
+						It is a long established fact that a reader will be distracted by 
+						the readable content of a page when looking at its It is a long e
+						stablished fact eadable content of a page when looking at its It is a 
+						long establish of a page when looking at its It is a long establish 
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="slide">
+			<div class="slide_left flex_conteiner">
+				<img src="img/niga.png" alt="men">
+			</div>
+			<div class="slide_right flex_conteiner">
+				<div class="get_price_content">
+					<h4>
+						Personal training
+					</h4>
+					<p>
+						It is a long established fact that a reader will be distracted by 
+						the readable content of a page when looking at its It is a long e
+						stablished fact eadable content of a page when looking at its It is a 
+						long establish of a page when looking at its It is a long establish 
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="section" id="section3">
+		<div class="content center_wrapp">
+			<div class="row">
+				<div class="our_team">
+
+					<div class="our_team_title">
+						<h3>Our <span class="accent">team</span></h3>
+						<span class="bottom_line animate_line"></span>
+						<span class="top_line animate_line"></span>
+					</div>
+
+					<div class="our_team_content">
+						<div class="our_team_item">
+							<div class="our_team_item_inner">
+								<div class="our_team_item_img">
+									<img src="img/run.png" alt="run">
+								</div>
+								<div class="our_team_item_description">
+								<div class="our_team_item_description_title">
+									<span>Andrey Yatsenko</span>
+
+								</div>
+								<div class="our_team_item_description_content">
+									<p>
+										It is a long established fact that a reader
+										will be distracted by the readable content
+										of a page when looking at its It is a long 
+										established fact eadable content of a page
+										when looking at its It is a long establish
+										of a page when looking at its It is a long
+										establish It is a long established fact
+										that a reader will be distracted by the
+										readable content of a page 
+									</p>									
+								</div>
+								<div class="our_team_item_description_icons">
+									<a class="facebook" href="#" title="facebook">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+											<g>
+												<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z " />
+											</g>
+										</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+											<g>
+												<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+												<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+												<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+												<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+											</g>
+											<linearGradient id="instagram_gradient"
+											x1="0" y1="100%" x2="100%" y2="0">
+											<stop offset="0%" stop-color="#fdf497" 
+											class="stop-1"/>
+											<stop offset="5%" stop-color="#fdf497" 
+											class="stop-1"/> 
+											<stop offset="45%" stop-color="#fd5949" 
+											class="stop-1"/>  
+											<stop offset="60%" stop-color="#d6249f"
+											class="stop-2"/>
+											<stop offset="100%" stop-color="#285AEB" 
+											class="stop-3"/>
+										</linearGradient>
+										</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+										<g>
+											<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+											<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+											<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+											<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+										</g>
+										<linearGradient id="instagram_gradient"
+										x1="0" y1="100%" x2="100%" y2="0">
+										<stop offset="0%" stop-color="#fdf497" 
+										class="stop-1"/>
+										<stop offset="5%" stop-color="#fdf497" 
+										class="stop-1"/> 
+										<stop offset="45%" stop-color="#fd5949" 
+										class="stop-1"/>  
+										<stop offset="60%" stop-color="#d6249f"
+										class="stop-2"/>
+										<stop offset="100%" stop-color="#285AEB" 
+										class="stop-3"/>
+									</linearGradient>
+									</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+									<g>
+										<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+										<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+										<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+										<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+									</g>
+									<linearGradient id="instagram_gradient"
+									x1="0" y1="100%" x2="100%" y2="0">
+									<stop offset="0%" stop-color="#fdf497" 
+									class="stop-1"/>
+									<stop offset="5%" stop-color="#fdf497" 
+									class="stop-1"/> 
+									<stop offset="45%" stop-color="#fd5949" 
+									class="stop-1"/>  
+									<stop offset="60%" stop-color="#d6249f"
+									class="stop-2"/>
+									<stop offset="100%" stop-color="#285AEB" 
+									class="stop-3"/>
+								</linearGradient>
+								</svg>
+									</a>
+								</div>																
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="our_team_item">
+							<div class="our_team_item_inner">
+								<div class="our_team_item_img">
+									<img src="img/run.png" alt="run">
+								</div>
+								<div class="our_team_item_description">
+								<div class="our_team_item_description_title">
+									<span>Andrey Yatsenko</span>
+
+								</div>
+								<div class="our_team_item_description_content">
+									<p>
+										It is a long established fact that a reader
+										will be distracted by the readable content
+										of a page when looking at its It is a long 
+										established fact eadable content of a page
+										when looking at its It is a long establish
+										of a page when looking at its It is a long
+										establish It is a long established fact
+										that a reader will be distracted by the
+										readable content of a page 
+									</p>									
+								</div>
+								<div class="our_team_item_description_icons">
+									<a class="facebook" href="#" title="facebook">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+											<g>
+												<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z " />
+											</g>
+										</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+											<g>
+												<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+												<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+												<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+												<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+											</g>
+											<linearGradient id="instagram_gradient"
+											x1="0" y1="100%" x2="100%" y2="0">
+											<stop offset="0%" stop-color="#fdf497" 
+											class="stop-1"/>
+											<stop offset="5%" stop-color="#fdf497" 
+											class="stop-1"/> 
+											<stop offset="45%" stop-color="#fd5949" 
+											class="stop-1"/>  
+											<stop offset="60%" stop-color="#d6249f"
+											class="stop-2"/>
+											<stop offset="100%" stop-color="#285AEB" 
+											class="stop-3"/>
+										</linearGradient>
+										</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+										<g>
+											<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+											<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+											<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+											<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+										</g>
+										<linearGradient id="instagram_gradient"
+										x1="0" y1="100%" x2="100%" y2="0">
+										<stop offset="0%" stop-color="#fdf497" 
+										class="stop-1"/>
+										<stop offset="5%" stop-color="#fdf497" 
+										class="stop-1"/> 
+										<stop offset="45%" stop-color="#fd5949" 
+										class="stop-1"/>  
+										<stop offset="60%" stop-color="#d6249f"
+										class="stop-2"/>
+										<stop offset="100%" stop-color="#285AEB" 
+										class="stop-3"/>
+									</linearGradient>
+									</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+									<g>
+										<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+										<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+										<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+										<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+									</g>
+									<linearGradient id="instagram_gradient"
+									x1="0" y1="100%" x2="100%" y2="0">
+									<stop offset="0%" stop-color="#fdf497" 
+									class="stop-1"/>
+									<stop offset="5%" stop-color="#fdf497" 
+									class="stop-1"/> 
+									<stop offset="45%" stop-color="#fd5949" 
+									class="stop-1"/>  
+									<stop offset="60%" stop-color="#d6249f"
+									class="stop-2"/>
+									<stop offset="100%" stop-color="#285AEB" 
+									class="stop-3"/>
+								</linearGradient>
+								</svg>
+									</a>
+								</div>																
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="our_team_item">
+							<div class="our_team_item_inner">
+								<div class="our_team_item_img">
+									<img src="img/run.png" alt="run">
+								</div>
+								<div class="our_team_item_description">
+								<div class="our_team_item_description_title">
+									<span>Andrey Yatsenko</span>
+
+								</div>
+								<div class="our_team_item_description_content">
+									<p>
+										It is a long established fact that a reader
+										will be distracted by the readable content
+										of a page when looking at its It is a long 
+										established fact eadable content of a page
+										when looking at its It is a long establish
+										of a page when looking at its It is a long
+										establish It is a long established fact
+										that a reader will be distracted by the
+										readable content of a page 
+									</p>									
+								</div>
+								<div class="our_team_item_description_icons">
+									<a class="facebook" href="#" title="facebook">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+											<g>
+												<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z " />
+											</g>
+										</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+											<g>
+												<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+												<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+												<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+												<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+											</g>
+											<linearGradient id="instagram_gradient"
+											x1="0" y1="100%" x2="100%" y2="0">
+											<stop offset="0%" stop-color="#fdf497" 
+											class="stop-1"/>
+											<stop offset="5%" stop-color="#fdf497" 
+											class="stop-1"/> 
+											<stop offset="45%" stop-color="#fd5949" 
+											class="stop-1"/>  
+											<stop offset="60%" stop-color="#d6249f"
+											class="stop-2"/>
+											<stop offset="100%" stop-color="#285AEB" 
+											class="stop-3"/>
+										</linearGradient>
+										</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+										<g>
+											<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+											<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+											<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+											<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+										</g>
+										<linearGradient id="instagram_gradient"
+										x1="0" y1="100%" x2="100%" y2="0">
+										<stop offset="0%" stop-color="#fdf497" 
+										class="stop-1"/>
+										<stop offset="5%" stop-color="#fdf497" 
+										class="stop-1"/> 
+										<stop offset="45%" stop-color="#fd5949" 
+										class="stop-1"/>  
+										<stop offset="60%" stop-color="#d6249f"
+										class="stop-2"/>
+										<stop offset="100%" stop-color="#285AEB" 
+										class="stop-3"/>
+									</linearGradient>
+									</svg>
+									</a>
+									<a href="#" class="instagram" title="instagram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+									<g>
+										<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+										<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+										<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+										<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+									</g>
+									<linearGradient id="instagram_gradient"
+									x1="0" y1="100%" x2="100%" y2="0">
+									<stop offset="0%" stop-color="#fdf497" 
+									class="stop-1"/>
+									<stop offset="5%" stop-color="#fdf497" 
+									class="stop-1"/> 
+									<stop offset="45%" stop-color="#fd5949" 
+									class="stop-1"/>  
+									<stop offset="60%" stop-color="#d6249f"
+									class="stop-2"/>
+									<stop offset="100%" stop-color="#285AEB" 
+									class="stop-3"/>
+								</linearGradient>
+								</svg>
+									</a>
+								</div>																
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section4">
+		<div class="content center_wrapp">
+			<div class="mobile_upp">
+				<div class="mobile_upp_title">
+					<h3>Make your body <span class="accent">with us</span></h3>
+					<span class="bottom_line animate_line"></span>
+					<span class="top_line animate_line"></span>
+				</div>
+				<div class="mobile_upp_content">
+					<div class="mobile_upp_content_inside">
+						<p class="mobile_upp_content_inside_text">
+							It is a long established fact that a 
+							reader will be distracted by the readable
+							content of a page when looking at its layout.
+							It is a long established fact that a reader 
+							will be distracted It is a long established
+							fact that a readerIt is a long established 
+							fact that a readerby…
+						</p>
+						<div class="read_more_button_wrapp">
+							<div class="read_more_button">
+								<a href="#" target="blank">Download</a>
+							</div>
+						</div>
+						<div class="iphone_x">
+							<img src="img/iphone_x.png" alt="iphone">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section5">
+		<div class="center_wrapp">
+			<div class="map">
+				<img src="img/map.png" alt="map">
+				<div class="marker" id="kiev">
+					<div class="marker_content_wrap">
+						<div class="marker_content">
+							<p class='title'>
+								Ukraine, Kiev,<br>
+								street Levanevskogo 5A 
+							</p>
+							<p>+380 8483 454</p>
+							<p>+380 8483 454</p>
+						</div>
+					</div>
+				</div>
+				<div class="marker" id="moskov">
+					<div class="marker_content_wrap">
+						<div class="marker_content">
+							<p class='title'>
+								Ukraine, Moskov,<br>
+								street Levanevskogo 5A 
+							</p>
+							<p>+380 8483 454</p>
+							<p>+380 8483 454</p>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+
+		</div>
+
+		<div class="my_footer">
+			<div class="social_icons">
+				<div class="social_icons_inner">
+					<span id="follow_us">follow us</span>
+					<a class="facebook" href="#" title="facebook">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+							<g>
+								<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z " />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="instagram" title="instagram">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+							<g>
+								<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+								<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" />
+								<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+								<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+							</g>
+							<linearGradient id="instagram_gradient"
+							x1="0" y1="100%" x2="100%" y2="0">
+							<stop offset="0%" stop-color="#fdf497" 
+							class="stop-1"/>
+							<stop offset="5%" stop-color="#fdf497" 
+							class="stop-1"/> 
+							<stop offset="45%" stop-color="#fd5949" 
+							class="stop-1"/>  
+							<stop offset="60%" stop-color="#d6249f"
+							class="stop-2"/>
+							<stop offset="100%" stop-color="#285AEB" 
+							class="stop-3"/>
+							</linearGradient>
+						</svg>
+					</a>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="center_wrapp">
+				<div class="my_footer_icon">
+					<div class="my_footer_icon_inner">
+						<div class="img_cover">
+							<img src="img/phone_icon.png" alt="phone">
+						</div>
+					</div>
+				</div>
+				<div class="my_footer_text">
+					<p class="my_footer_text_title">Order a call</p>
+					<p>leave your number and we will call you back</p>
+				</div>
+				<div class="my_footer_select">
+					<input type="text" placeholder="+380">
+					<div class="select_country">
+						<div class="select_arrow"></div>
+						<ul>
+							<li>USA</li>
+							<li>Russia</li>
+							<li>Ukraine</li>
+							<li>Portu</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>				
+		</div>
+	</div>
+
+</div>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
