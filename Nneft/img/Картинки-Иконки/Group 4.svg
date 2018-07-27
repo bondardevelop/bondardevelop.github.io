@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="55px" viewBox="0 0 56 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-900.000000, -329.000000)">
+            <g id="Group-4" transform="translate(900.000000, 329.000000)">
+                <rect id="Rectangle-4-Copy" stroke="#979797" transform="translate(28.000000, 27.500000) scale(-1, 1) translate(-28.000000, -27.500000) " x="0.5" y="0.5" width="55" height="54" rx="27"></rect>
+                <g id="next-copy-2" opacity="0.5" transform="translate(25.000000, 21.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M6.89203822,6.24084455 L0.640813063,0.108293603 C0.493627398,-0.0360978677 0.257574915,-0.0360978677 0.110389249,0.108293603 C-0.0367964164,0.252685074 -0.0367964164,0.4842563 0.110389249,0.628647771 L6.09501396,6.49965945 L0.110389249,12.3706711 C-0.0367964164,12.5150626 -0.0367964164,12.7466338 0.110389249,12.8910253 C0.182593538,12.9618589 0.279791619,13 0.374212612,13 C0.468633605,13 0.565831687,12.9645832 0.638035975,12.8910253 L6.88926114,6.75847435 C7.0364468,6.61680725 7.0364468,6.38251166 6.89203822,6.24084455 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
