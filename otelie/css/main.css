@@ -125,6 +125,7 @@ body {
   padding: 0;
   background-color: #fff;
   color: #1e1e1e;
+  letter-spacing: 0.6px;
 }
 
 body input, body textarea {
